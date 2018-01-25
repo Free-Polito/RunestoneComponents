@@ -348,3 +348,15 @@ div.error {
 .correct {
     color: #84b8d9;
 }
+
+/* New rules for oep-libro-python <https://github.com/Open-Education-Polito/oep-python-interactive-book> */
+
+.red {
+    color: red;
+} /* Class "red" used to write red texts. */
+
+.boltred {
+    font-weight: bold;
+    color: red;
+} /* Class "boltred" used to write bold-red texts. */
+
