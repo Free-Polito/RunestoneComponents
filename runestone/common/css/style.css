@@ -348,3 +348,12 @@ div.error {
 .correct {
     color: #84b8d9;
 }
+
+.red {
+    color: red;
+}
+
+.boltred {
+    font-weight: bold;
+    color: red;
+}
