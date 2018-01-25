@@ -687,3 +687,32 @@ span.caption-text {
     font-weight: bold;
     font-size: large;
 }
+
+/* Add custom rules for oep-python-interactive-book */
+
+.red {
+    color: red;
+}
+
+.boltred {
+	color: red;
+	font-weight: bold;
+}
+
+.blue {
+	color: blue;
+}
+
+.boltblue {
+	color: blue;
+	font-weight: bold;
+}
+
+.green {
+	color: green;
+}
+
+.boltgreen {
+	color: green;
+	font-weight: bold;
+}
