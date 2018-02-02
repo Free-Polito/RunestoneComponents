@@ -196,18 +196,19 @@ ActiveCode.prototype.createControls = function () {
       $(butt).attr("type","button")
     }
 
-    if (!this.hidecode && !this.hidehistory) {
-        var butt = document.createElement("button");
-        $(butt).text($.i18n("msg_activecode_load_history"));
-        $(butt).addClass("btn btn-default");
-        $(butt).attr("type","button")
-        ctrlDiv.appendChild(butt);
-        this.histButton = butt;
-        $(butt).click(this.addHistoryScrubber.bind(this));
-        if (this.graderactive) {
-            this.addHistoryScrubber(true);
-        }
-    }
+    //if (! this.hidecode) {
+        //// No-op
+        //var butt = document.createElement("button");
+        //$(butt).text("Load History");
+        //$(butt).addClass("btn btn-default");
+        //$(butt).attr("type","button")
+        //ctrlDiv.appendChild(butt);
+        //this.histButton = butt;
+        //$(butt).click(this.addHistoryScrubber.bind(this));
+        //if (this.graderactive) {
+            //this.addHistoryScrubber(true);
+        //}
+    //}
 
     if ($(this.origElem).data('gradebutton') && ! this.graderactive) {
         butt = document.createElement("button");
