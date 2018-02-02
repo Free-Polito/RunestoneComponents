@@ -251,26 +251,16 @@ ActiveCode.prototype.createControls = function () {
     }
 
     // CodeLens
-    if ($(this.origElem).data("codelens") && ! this.graderactive) {
-        butt = document.createElement("button");
-        $(butt).addClass("ac_opt btn btn-default");
-        $(butt).text($.i18n("msg_activecode_show_codelens"));
-        $(butt).css("margin-left", "10px");
-        this.clButton = butt;
-        ctrlDiv.appendChild(butt);
-        $(butt).click(this.showCodelens.bind(this));
-    }
-
-    // TIE
-    if(this.tie) {
-        butt = document.createElement("button");
-        $(butt).addClass("ac_opt btn btn-default");
-        $(butt).text("Open Code Coach");
-        this.tieButt = butt;
-        ctrlDiv.appendChild(butt);
-        $(butt).click(this.showTIE.bind(this))
-    }
-    // CodeCoach
+    //if ($(this.origElem).data("codelens") && ! this.graderactive) {
+        //butt = document.createElement("button");
+        //$(butt).addClass("ac_opt btn btn-default");
+        //$(butt).text("Show CodeLens");
+        //$(butt).css("margin-left", "10px");
+        //this.clButton = butt;
+        //ctrlDiv.appendChild(butt);
+        //$(butt).click(this.showCodelens.bind(this));
+    //}
+    //// CodeCoach
     // bnm - disable code coach until it is revamped  2017-7-22
     // if (this.useRunestoneServices && $(this.origElem).data("coach")) {
     //     butt = document.createElement("button");

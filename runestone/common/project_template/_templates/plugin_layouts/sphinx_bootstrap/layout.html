@@ -76,6 +76,7 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span aria-label="Search" class="visuallyhidden">Search</span></i>
           </a>
           <ul class='dropdown-menu'>
+            <!-- TODO: Mettere la possibilità di aprire direttamente python scratch con un'icona nella navbar -->
             {% if 'overview' in course_id %}
                 <li><a href='/{{appname}}/static/{{course_id}}/overview.html' aria-label="index-page">Table of Contents</a></li>
             {% else: %}
@@ -130,6 +131,7 @@
         <li class="divider-vertical"></li>
         <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
 
+        <!-- TODO mettere questo linkato direttamente ad un'icona -->
         <!-- <li class="dropdown">             -->
           <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
               <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span aria-label="Scratch Activecode" class="visuallyhidden">Scratch Activecode</span></i></a></li>
@@ -145,10 +147,7 @@
           <ul class="dropdown-menu user-menu">
             <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
             <li><a href='/{{appname}}/static/{{course_id}}/navhelp.html'>Navigation Help</a></li>
-            <li><a href='/{{appname}}/static/instructorguide/index.html'>Help for Instructors</a></li>
             <li class="divider"></li>
-            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/{{ appname }}/default/reportabug?course={{ course_id }}&page={{ pathto(pagename,1) }}'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -276,7 +275,7 @@
       {% if use_services %}
       <span id='numuserspan'></span><span class='loggedinuser'></span>
       {% endif %}
-      | <a href="#">Back to top</a>
+      | <a href="#">Torna su</a>
       {% if theme_source_link_position == "footer" %}
         <br />
         {% include "sourcelink.html" %}
@@ -294,7 +293,7 @@
       {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}<br/>
     {%- endif %}
     {%- if show_sphinx %}
-      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://runestoneinteractive.org/">Runestone</a> {{ runestone_version }}.{% endtrans %}
+      <!--{% trans sphinx_version=sphinx_version|e %}Creato con <a href="http://runestoneinteractive.org/">Runestone</a> {{ runestone_version }}.{% endtrans %}-->
     {%- endif %}
     </p>
   </div>
