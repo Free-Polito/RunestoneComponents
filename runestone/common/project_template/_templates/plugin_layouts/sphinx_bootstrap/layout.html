@@ -76,7 +76,6 @@
             <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span aria-label="Search" class="visuallyhidden">Search</span></i>
           </a>
           <ul class='dropdown-menu'>
-            <!-- TODO: Mettere la possibilità di aprire direttamente python scratch con un'icona nella navbar -->
             {% if 'overview' in course_id %}
                 <li><a href='/{{appname}}/static/{{course_id}}/overview.html' aria-label="index-page">Table of Contents</a></li>
             {% else: %}
@@ -227,19 +226,6 @@
   eBookConfig.downloadsEnabled = {{downloads_enabled}};
   eBookConfig.enable_chatcodes = {{enable_chatcodes}} ? {{ enable_chatcodes }} : false;
   eBookConfig.allow_pairs = {{allow_pairs}} ? {{allow_pairs}} : false;
-
-</script>
-
-<div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
 
 {% endblock %}
 
