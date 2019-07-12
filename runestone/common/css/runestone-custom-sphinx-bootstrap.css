@@ -801,6 +801,7 @@ ul.dropdown-menu.globaltoc {
     font-size: large;
 }
 
+<<<<<<< HEAD
 
 /* Style lp textareas. */
 textarea#lp-result {
@@ -857,7 +858,6 @@ textarea#lp-result {
     padding-right: 2em;
 }
 
-
 #scprogresscontainer {
     width: 50%;
     margin-left: auto;
@@ -867,3 +867,33 @@ textarea#lp-result {
 #subchapterprogress > div {
     background: green;
 }
+
+/* Add custom rules for oep-python-interactive-book */
+
+.red {
+    color: red;
+}
+
+.boltred {
+	color: red;
+	font-weight: bold;
+}
+
+.blue {
+	color: blue;
+}
+
+.boltblue {
+	color: blue;
+	font-weight: bold;
+}
+
+.green {
+	color: green;
+}
+
+.boltgreen {
+	color: green;
+	font-weight: bold;
+}
+>>>>>>> 74e0357... Added CSS classes.

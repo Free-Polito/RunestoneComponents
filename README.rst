@@ -1,6 +1,10 @@
 RunestoneComponents
 ===================
 
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/RunestoneInteractive/RunestoneComponents
+   :target: https://gitter.im/RunestoneInteractive/RunestoneComponents?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 .. image:: https://img.shields.io/pypi/v/Runestone.svg
    :target: https://pypi.python.org/pypi/Runestone
    :alt: PyPI Version
@@ -21,7 +25,6 @@ Documentation
 You will find the new Authors Guide `here <https://runestone.academy/runestone/static/authorguide/index.html>`_
 
 If you want to report any issues with the docs or submit PRs to improve them please do so on `github <https://github.com/RunestoneInteractive/runestoneinteractive.github.io/issues>`_
-
 
 Quick Start
 -----------
